@@ -2,7 +2,7 @@ Olympiad::Application.routes.draw do
   
   resources :events
 
-  get "events/current_event"
+  # get "events/current_event"
  
   resources :users
 
@@ -33,7 +33,7 @@ Olympiad::Application.routes.draw do
   #   end
 
   
-  resources :push_bunny 
+  resources :push_bunnies 
 
   mount Split::Dashboard, :at => 'split'
 
