@@ -1,4 +1,4 @@
-class DeveloperOlympiadController < ActionController::Base
+class PushBunnyController < ActionController::Base
   protect_from_forgery
 
   before_filter :user_check
