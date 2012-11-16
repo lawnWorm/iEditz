@@ -1,0 +1,10 @@
+<h1>Create a Push Bunny </h1>
+<%= form_for @push_bunny, :url => { :controller => "push_bunnies", :action => "create" }, :html => {:class => "new_push_bunny_form"} do |f| %>
+  <%= f.label :task %>:
+  <%= f.text_field :task %>
+  <br>
+  <%= f.label :name %>:
+  <%= f.text_field :name%>
+  <br>
+  <%= f.submit "Create Push Bunny" %>
+<% end %>
