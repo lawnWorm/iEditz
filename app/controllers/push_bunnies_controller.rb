@@ -7,6 +7,7 @@ class PushBunniesController < ApplicationController
 
   def show
   	@show = "Show the overview for the event."
+    @push_bunnies = PushBunny.find(:all)
 
   	render "show"
   end

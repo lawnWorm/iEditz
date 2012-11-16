@@ -17,7 +17,7 @@ class EventsController < ApplicationController
   	@event = Event.new(params[:event])
 
   	if @event.save
-	    redirect_to :controller => "events", :action => "show"
+	    redirect_to :controller => "push_bunnies", :action => "update"
   	else
   	  flash[:error] = "Event was not created."
   	end

@@ -1,2 +1,21 @@
-Test
-  
+<table>
+
+<td>
+	Pick from recently created push bunnies:
+<ol>
+	<%- @push_bunnies.each do |pb| -%>
+    <li><%= link_to pb.name, 'push_bunny_update' %></li>
+	<%- end -%>
+</ol>
+</td>
+
+<td>
+Field to show that:
+</td>
+
+<td>
+<div>Legend:</div>
+the legend lives...
+</td>
+
+</table>
