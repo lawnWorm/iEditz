@@ -1,0 +1,20 @@
+Create New Olympiad Event
+<br>
+<%= form_for @event, :url => { :controller => "events", :action => "create" }, :html => {:class => "new_event_form"} do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :description %>:
+  <%= f.text_field :description %>
+  <br>
+  <%= f.label :rules %>:
+  <%= f.text_field :rules %>
+  <br>
+  <%= f.label :start_date %>:
+  <%= f.text_field :start_date %>
+  <br>
+  <%= f.label :end_date %>:
+  <%= f.text_field :end_date %>
+  <br>
+  <%= f.submit "Create New Olympiad Event" %>
+<% end %>

@@ -1,0 +1,14 @@
+<h1>Create a new user</h1>
+<%= "current user test = #{@new_user_test }" %>
+<%= form_for @user, :url => { :controller => "users", :action => "create" }, :html => {:class => "sign_up_form"} do |f| %>
+  <%= f.label :first_name %>:
+  <%= f.text_field :first_name %>
+  <br>
+  <%= f.label :last_name %>:
+  <%= f.text_field :last_name %>
+  <br>
+  <%= f.label :user_name %>:
+  <%= f.text_field :user_name %>
+  <br>
+  <%= f.submit "Sign Up" %>
+<% end %>
