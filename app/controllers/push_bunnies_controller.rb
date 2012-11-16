@@ -22,14 +22,15 @@ class PushBunniesController < ApplicationController
     @push_bunny = PushBunny.new(params[:push_bunny])
 
     if @push_bunny.save
-      #redirect_to :controller => "PushBunnies", :action => "update"
+      redirect_to :controller => "PushBunnies", :action => "edit"
     else
       flash[:error] = "Push Bunny was not created."
     end
 
   end
 
-  def update
+  def edit
+
 
 
 
